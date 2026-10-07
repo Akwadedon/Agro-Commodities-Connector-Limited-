@@ -1,1 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Agro-Commodities Connector Limited | Nigerian Agricultural Commodities</title>
+
+  <meta name="description"
+    content="Agro-Commodities Connector Limited connects quality Nigerian agricultural commodities with global markets through reliable sourcing, aggregation, quality coordination and export support.">
+
+  <meta name="keywords"
+    content="Nigerian agricultural commodities, Nigeria commodity suppliers, Nigerian sesame suppliers, Nigerian soybean suppliers, Nigerian agricultural exporters, commodity sourcing Nigeria">
+
+  <meta name="author" content="Agro-Commodities Connector Limited">
+
+  <meta property="og:title"
+    content="Agro-Commodities Connector Limited">
+
+  <meta property="og:description"
+    content="Connecting quality Nigerian agricultural commodities to global markets.">
+
+  <meta property="og:type" content="website">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #1d2a22;
+      background: #ffffff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* NAVIGATION */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid #e5e9e5;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: 800;
+      color: #1d5b35;
+    }
+
+    .logo span {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      color: #777;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: #287642;
+    }
+
+    .quote-btn {
+      background: #1d6b3a;
+      color: white !important;
+      padding: 11px 17px;
+      border-radius: 7px;
+    }
+
+    .menu-btn {
+      display: none;
+      border: none;
+      background: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(9,40,22,0.88),
+          rgba(9,40,22,0.55),
+          rgba(9,40,22,0.15)
+        ),
+        url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+      padding: 80px 20px;
+      color: white;
+    }
+
+    .hero-content small {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: #d9f0df;
+    }
+
+    .hero h1 {
+      max-width: 780px;
+      margin: 18px 0;
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 1.05;
+    }
+
+    .hero p {
+      max-width: 680px;
+      font-size: 19px;
+      color: #f2f6f3;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 21px;
+      border-radius: 7px;
+      font-weight: 700;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: #1d5b35;
+    }
+
+    .btn-secondary {
+      border-color: rgba(255,255,255,0.7);
+      color: white;
+    }
+
+    /* GENERAL */
+
+    section {
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 40px;
+    }
+
+    .section-heading small {
+      color: #287642;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+
+    .section-heading h2 {
+      margin: 8px 0 12px;
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.15;
+    }
+
+    .section-heading p {
+      color: #667169;
+    }
+
+    /* TRUST */
+
+    .trust {
+      background: #f5f8f5;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+    }
+
+    .trust-card {
+      background: white;
+      border: 1px solid #e5eae5;
+      border-radius: 12px;
+      padding: 25px 18px;
+      text-align: center;
+    }
+
+    .trust-card strong {
+      display: block;
+      color: #1d5b35;
+      margin-bottom: 7px;
+    }
+
+    .trust-card span {
+      font-size: 13px;
+      color: #69726c;
+    }
+
+    /* COMMODITIES */
+
+    .commodity-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .commodity-card {
+      border: 1px solid #e3e8e3;
+      border-radius: 13px;
+      overflow: hidden;
+      background: white;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .commodity-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 35px rgba(0,0,0,.08);
+    }
+
+    .commodity-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .commodity-content {
+      padding: 20px;
+    }
+
+    .commodity-content h3 {
+      margin-bottom: 8px;
+      color: #1d5b35;
+    }
+
+    .commodity-content p {
+      font-size: 14px;
+      color: #69726c;
+      margin-bottom: 15px;
+    }
+
+    .details {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .card-btn {
+      display: inline-block;
+      background: #1d6b3a;
+      color: white;
+      padding: 9px 13px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* BUYERS / SUPPLIERS */
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .feature-box {
+      padding: 40px;
+      border-radius: 16px;
+      background: #f5f8f5;
+    }
+
+    .feature-box h3 {
+      font-size: 27px;
+      margin-bottom: 15px;
+      color: #1d5b35;
+    }
+
+    .feature-box ul {
+      padding-left: 20px;
+      margin: 20px 0;
+      color: #59645c;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: #183c28;
+      color: white;
+    }
+
+    .about p {
+      max-width: 800px;
+      color: #dce9df;
+      font-size: 17px;
+    }
+
+    .credentials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .credential {
+      padding: 15px 18px;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 8px;
+      background: rgba(255,255,255,.06);
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 40px;
+    }
+
+    .contact-info p {
+      margin: 12px 0;
+      color: #626d65;
+    }
+
+    form {
+      display: grid;
+      gap: 13px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #d8dfd9;
+      border-radius: 7px;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #10251a;
+      color: white;
+      padding: 50px 20px 25px;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 {
+      margin-bottom: 13px;
+    }
+
+    footer p,
+    footer a {
+      color: #b9c8bd;
+      font-size: 14px;
+    }
+
+    footer a {
+      display: block;
+      margin: 7px 0;
+    }
+
+    .copyright {
+      max-width: 1200px;
+      margin: 40px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      color: #91a296;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .commodity-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .hero {
+        min-height: 590px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 60px 17px;
+      }
+
+      .trust-grid,
+      .commodity-grid,
+      .two-column,
+      .contact-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-box {
+        padding: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="nav">
+
+    <a href="#home" class="logo">
+      Agro-Commodities Connector
+      <span>LIMITED · NIGERIA</span>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
+      ☰
+    </button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#marketplace">Marketplace</a>
+      <a href="#buyers">Buyers</a>
+      <a href="#suppliers">Suppliers</a>
+      <a href="#media">Media</a>
+      <a href="#resources">Resources</a>
+      <a href="#about">About Us</a>
+      <a href="#contact" class="quote-btn">Request a Quote</a>
+    </div>
+
+  </nav>
+</header>
+
+
+<main>
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <small>Nigerian Agricultural Commodities · Global Markets</small>
+
+    <h1>
+      Connecting Quality Nigerian Agricultural Commodities to Global Markets
+    </h1>
+
+    <p>
+      Reliable sourcing, aggregation, quality coordination and export support
+      for international buyers seeking quality agricultural commodities from Nigeria.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#marketplace" class="btn btn-primary">
+        Explore Commodities
+      </a>
+
+      <a href="#contact" class="btn btn-secondary">
+        Request a Quote
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="trust">
+
+  <div class="container">
+
+    <div class="trust-grid">
+
+      <div class="trust-card">
+        <strong>QUALITY SOURCED</strong>
+        <span>Commodity-focused sourcing</span>
+      </div>
+
+      <div class="trust-card">
+        <strong>SUPPLY NETWORK</strong>
+        <span>Supplier connections</span>
+      </div>
+
+      <div class="trust-card">
+        <strong>EXPORT READY</strong>
+        <span>Export support coordination</span>
+      </div>
+
+      <div class="trust-card">
+        <strong>TRACEABLE</strong>
+        <span>Sourcing coordination</span>
+      </div>
+
+      <div class="trust-card">
+        <strong>QUALITY</strong>
+        <span>Quality coordination</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="marketplace">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <small>Marketplace</small>
+
+      <h2>Nigerian Agricultural Commodities</h2>
+
+      <p>
+        Explore agricultural commodities sourced through our Nigerian supply network.
+      </p>
+
+    </div>
+
+
+    <div class="commodity-grid">
+
+
+      <article class="commodity-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1595475207225-428b62bda831?auto=format&fit=crop&w=900&q=80"
+          alt="Sesame seeds">
+
+        <div class="commodity-content">
+
+          <h3>Sesame Seeds</h3>
+
+          <p>
+            Quality Nigerian sesame suitable for domestic and international markets.
+          </p>
+
+          <div class="details">
+            Origin: Nigeria<br>
+            Availability: Subject to confirmation<br>
+            Export: Available
+          </div>
+
+          <a href="#contact" class="card-btn">
+            Request Quote
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="commodity-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=900&q=80"
+          alt="Soybeans">
+
+        <div class="commodity-content">
+
+          <h3>Soybeans</h3>
+
+          <p>
+            Nigerian soybeans sourced for food, feed and processing applications.
+          </p>
+
+          <div class="details">
+            Origin: Nigeria<br>
+            Availability: Subject to confirmation<br>
+            Export: Available
+          </div>
+
+          <a href="#contact" class="card-btn">
+            Request Quote
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="commodity-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=900&q=80"
+          alt="Agricultural commodities">
+
+        <div class="commodity-content">
+
+          <h3>Hibiscus</h3>
+
+          <p>
+            Nigerian dried hibiscus sourced for international commodity markets.
+          </p>
+
+          <div class="details">
+            Origin: Nigeria<br>
+            Availability: Subject to confirmation<br>
+            Export: Available
+          </div>
+
+          <a href="#contact" class="card-btn">
+            Request Quote
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="commodity-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=900&q=80"
+          alt="Nigerian agricultural sourcing">
+
+        <div class="commodity-content">
+
+          <h3>Ginger</h3>
+
+          <p>
+            Nigerian ginger sourced through agricultural supply networks.
+          </p>
+
+          <div class="details">
+            Origin: Nigeria<br>
+            Availability: Subject to confirmation<br>
+            Export: Available
+          </div>
+
+          <a href="#contact" class="card-btn">
+            Request Quote
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="buyers">
+
+  <div class="container">
+
+    <div class="two-column">
+
+      <div class="feature-box">
+
+        <h3>For International Buyers</h3>
+
+        <p>
+          We help buyers connect with Nigerian agricultural commodity supply
+          opportunities and coordinate sourcing requirements.
+        </p>
+
+        <ul>
+          <li>Commodity sourcing</li>
+          <li>Supplier coordination</li>
+          <li>Quality specifications</li>
+          <li>Quantity requirements</li>
+          <li>Packaging coordination</li>
+          <li>Export documentation coordination</li>
+          <li>Logistics coordination</li>
+        </ul>
+
+        <a href="#contact" class="card-btn">
+          Submit Buyer RFQ
+        </a>
+
+      </div>
+
+
+      <div class="feature-box" id="suppliers">
+
+        <h3>For Nigerian Suppliers</h3>
+
+        <p>
+          Connect your agricultural commodity supply with buyers and sourcing
+          opportunities through our network.
+        </p>
+
+        <ul>
+          <li>Farmers</li>
+          <li>Aggregators</li>
+          <li>Processors</li>
+          <li>Warehouse operators</li>
+          <li>Commodity suppliers</li>
+        </ul>
+
+        <a href="#contact" class="card-btn">
+          Register as a Supplier
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="media" class="trust">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <small>Media & Gallery</small>
+
+      <h2>Company in Action</h2>
+
+      <p>
+        Agricultural commodities, sourcing, quality coordination, warehousing,
+        packaging and export preparation.
+      </p>
+
+    </div>
+
+    <div class="two-column">
+
+      <div class="feature-box">
+        <h3>Featured Photos</h3>
+        <p>
+          Our future Media Manager will allow authorised administrators to
+          upload, replace, organise and feature company photographs without
+          editing website code.
+        </p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Latest Videos</h3>
+        <p>
+          The platform will support commodity, warehouse, quality-control,
+          processing and export videos.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="resources">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <small>Resource Centre</small>
+
+      <h2>Agricultural Trade Resources</h2>
+
+      <p>
+        Useful information covering commodities, quality, export processes,
+        documentation and international trade.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="about" class="about">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <small>About Us</small>
+
+      <h2>Connecting Nigerian Supply with Global Opportunity</h2>
+
+    </div>
+
+    <p>
+      Agro-Commodities Connector Limited is a Nigerian agricultural commodities
+      company focused on sourcing, aggregation, quality coordination, supplier
+      connections, international buyer connections and export support.
+    </p>
+
+    <div class="credentials">
+
+      <div class="credential">
+        CAC Registration: <strong>9717504</strong>
+      </div>
+
+      <div class="credential">
+        NEPC Exporters' Registration: <strong>004960</strong>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <small>Contact</small>
+
+      <h2>Request a Commodity Quote</h2>
+
+      <p>
+        Tell us what commodity you require and our team can review your request.
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+
+        <h3>Agro-Commodities Connector Limited</h3>
+
+        <p>📍 Kano State, Nigeria</p>
+
+        <p>
+          We support agricultural commodity sourcing, aggregation,
+          quality coordination, supplier connections and export support.
+        </p>
+
+        <p>
+          <strong>CAC:</strong> 9717504
+        </p>
+
+        <p>
+          <strong>NEPC:</strong> 004960
+        </p>
+
+      </div>
+
+
+      <form onsubmit="submitForm(event)">
+
+        <input
+          type="text"
+          placeholder="Full Name"
+          required>
+
+        <input
+          type="text"
+          placeholder="Company Name">
+
+        <input
+          type="email"
+          placeholder="Business Email"
+          required>
+
+        <input
+          type="tel"
+          placeholder="Phone / WhatsApp">
+
+        <input
+          type="text"
+          placeholder="Country">
+
+        <select required>
+          <option value="">Select Commodity</option>
+          <option>Sesame Seeds</option>
+          <option>Soybeans</option>
+          <option>Pigeon Peas</option>
+          <option>Hibiscus</option>
+          <option>Ginger</option>
+          <option>Cashew Nuts</option>
+          <option>Cocoa</option>
+          <option>Shea Nuts</option>
+          <option>Cassia Tora</option>
+          <option>Palm Kernel Products</option>
+          <option>Other</option>
+        </select>
+
+        <input
+          type="text"
+          placeholder="Quantity Required">
+
+        <input
+          type="text"
+          placeholder="Specification / Grade">
+
+        <input
+          type="text"
+          placeholder="Destination Port / Country">
+
+        <input
+          type="text"
+          placeholder="Preferred Incoterm">
+
+        <textarea
+          placeholder="Tell us about your requirement"></textarea>
+
+        <button class="card-btn" type="submit">
+          Submit Request
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+      <h3>Agro-Commodities Connector Limited</h3>
+
+      <p>
+        Connecting quality Nigerian agricultural commodities
+        to global markets.
+      </p>
+    </div>
+
+    <div>
+      <h3>Company</h3>
+      <a href="#about">About Us</a>
+      <a href="#buyers">Buyers</a>
+      <a href="#suppliers">Suppliers</a>
+    </div>
+
+    <div>
+      <h3>Commodities</h3>
+      <a href="#marketplace">Marketplace</a>
+      <a href="#marketplace">Sesame</a>
+      <a href="#marketplace">Soybeans</a>
+      <a href="#marketplace">Hibiscus</a>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <a href="#contact">Request a Quote</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+
+    © 2026 Agro-Commodities Connector Limited.
+    CAC 9717504 · NEPC 004960
+
+  </div>
+
+</footer>
+
+
+<script>
+
+function toggleMenu() {
+  document
+    .getElementById("navLinks")
+    .classList
+    .toggle("active");
+}
+
+function submitForm(event) {
+
+  event.preventDefault();
+
+  alert(
+    "Thank you for your enquiry. Your request has been received."
+  );
+
+}
+
+</script>
+
+</body>
+</html>
