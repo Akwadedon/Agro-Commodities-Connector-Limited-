@@ -118,9 +118,11 @@ Never place a Supabase secret or service-role key in front-end code.
 
 Only appropriate public/publishable credentials should be used in browser applications, with database and storage security policies configured correctly on the backend.
 
-## Brand
+## Official Logo
 
-The official Agro-Commodities Connector Limited logo and approved company identity should be used throughout the final website.
+The repository includes the company's official logo as `official-logo.png`. The website loads this exact image locally, so the logo does not depend on an external image URL.
+
+The logo is used in the website header and footer.
 
 ## Vision
 
